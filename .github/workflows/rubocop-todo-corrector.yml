@@ -16,6 +16,8 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: r7kamura/rubocop-todo-corrector@v0
         with:
